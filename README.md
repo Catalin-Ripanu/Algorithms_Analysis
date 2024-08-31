@@ -77,6 +77,3 @@ We call Problem_1 vertex cover and Problem_2 set cover.
 
 Left to right: "⇒" (B is a vertex cover of size K ⇒ C={ Sᵥ | v ∈ B } is a set cover of size K)
 Right to left: "⇐" (C={ Sᵥ | v ∈ B } is a set cover of size K ⇒ B={ v | Sᵥ ∈ C } is a vertex cover of size K)
-
-An interesting assignment.
-Ripanu Catalin-Alexandru.
