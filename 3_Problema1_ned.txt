@@ -1,0 +1,14 @@
+K_Problema1(G,K) // G=(V,E)
+B=Ø
+//generare
+for i=1:K
+    x=choice(V)
+    if x∈B
+       fail()
+    B=B⋃{x}
+//testare
+for_each x∈V
+  for_each y∈V
+     if (x,y)∈E and x∉B and y∉B
+     fail()
+success()

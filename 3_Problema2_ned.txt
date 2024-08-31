@@ -1,0 +1,20 @@
+K_Problema2(U,N,S,K,M) // Si este S indice i ( un element din S={S1,S2,..,Sm} )
+C=Ø
+mark_element[N]={0}
+//generare
+for j=1:K
+     i=choice({1,2,...,M})
+     if Si∈C
+       fail()
+     C=C⋃Si
+//testare
+for j=1:K        // C (colectia) este de forma C={C1,C2,..CK},C1..CK sunt submultimi.
+   for i=1:|Cj|
+     if(mark_element[Cj[i]]==0)
+       mark_element[Cj[i]]=1
+for j=1:N
+     if(mark_element[Uj]==0) // daca un element nu a fost marcat
+       fail() // colectia gasita nu este buna
+//colectia este buna
+success()
+    

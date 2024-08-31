@@ -1,0 +1,32 @@
+graf_izomorf(K,K2,Vi,Ei)  // Vi este V indice i (Vi este vector de noduri)
+for j=1:K
+    if Vj < K2
+     fail()
+for j=1:K
+   V'j[K2] = {0}
+   marcatj[|Vj|] = {0}
+//generare
+for j=1:K
+   for i=1:K2
+	  x = choice(1..|Vj|)
+     	if marcatj[x] == 1
+	    	fail()
+	  marcatj[x]=1
+	  V'j[i] = x
+//testare
+  for x=1:K-1
+    for i=1:K2
+    	for j=1:K2
+	      if (V'x+1[i],V'x+1[j]) in Ex+1 and (V'x[i],V'x[j]) not in Ex:
+            fprintf "-1"
+		      	fail()
+        if (V'x+1[i],V'x+1[j]) not in Ex+1 and (V'x[i],V'x[j]) in Ex:
+            fprintf "-1"
+		      	fail()
+if file_out contains "-1"
+   delete_line
+for x=1:K
+    for i=1:K2
+       fprintf "V'x[i]"
+       fprintf "\n"
+success()

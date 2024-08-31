@@ -1,0 +1,18 @@
+N_Regine(N)
+columns=0
+verif_queen_row[N]={0}
+verif_queen_diag1[2*N]={0}
+verif_queen_diag2[N-1]={0}
+for(columns=1;columns<=N;columns++)
+     rows=choice({1,2...,N})
+     const1=columns+rows
+     const2=rows-columns
+     if(const2<0)
+     const2=const2*(-1)
+     if(verif_queen_row[rows]==1 or verif_queen_diag1[const1]==1 or verif_queen_diag2[const2]==1)
+       fail()
+     verif_queen_row[rows]=1
+     verif_queen_diag1[const1]=1
+     verif_queen_diag2[const2]=1
+     print "(rows,columns)\n"
+success()     
