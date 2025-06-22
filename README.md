@@ -1,5 +1,3 @@
-# HW_AA
-
 ## Problem 1 - Chess
 
 ### Problem Reformulation:
